@@ -270,18 +270,6 @@ audio::-webkit-media-controls-enclosure {
     #title::first-letter {
         font-size: xx-large;
     }
-
-
-    ul {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height .2s ease-out;
-    }
- 
-    nav ul{
-        display: flex;
-        justify-content: space-between;
-    }
     
         label {
             cursor: pointer;
