@@ -261,9 +261,23 @@ audio::-webkit-media-controls-enclosure {
 
 @media screen and (min-width: 375px) {
 
-    li #title {
+    #title {
+        font-weight: bolder;
+        font-size: x-large;
+        padding-right: 50px;
+        padding-left: 0px;
         position: fixed;
     }
+
+    #title::first-letter {
+        font-size: xx-large;
+    }
+
+    #dropdown {
+        display:contents;
+    }
+
+    
 
 }
 
