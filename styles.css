@@ -265,11 +265,6 @@ audio::-webkit-media-controls-enclosure {
         background-color: #020659;
     }
 
-    body {
-        margin: 0 auto;
-    }
-
-
     #title {
         font-weight: bolder;
         font-size: x-large;
