@@ -11,19 +11,17 @@
 
     <body>
         <header>
-            <div id="container">
                 <nav>
                 <input type="checkbox" id="dropdown">
                 <label for="dropdown"><span></span></label>
                     <ul>
-                        <li id="home"><a href="#">MuzakMaker</a></li>
+                        <li id="title"><a href="#">MuzakMaker</a></li>
                         <li><a href="#">Trending Songs</a></li>
                         <li><a href="#">Your Playlists</a></li>
                         <li><a href="#">Curated Playlists</a></li>
+                        <li><img src="images/duke-silver.png" alt="profile picture"></li>
                     </ul>
-                </nav>
-            </div>
-            <img src="images/duke-silver.png" alt="Duke Silver">
+                </nav> 
         </header>
         
         <div id="gradienthead">
@@ -34,77 +32,84 @@
         </div>
 
         <main>
-
             <h2>Trending Songs</h2>
-            <section> 
-                <div>
-                    <h3>Aloma</h3>
-                        <dl>
-                            <dt>Artist</dt>
-                            <dd>Cali</dd>
-                        </dl>
-                </div>
-                <img src="images/aloma-cover.png" alt="White dove flying">
-                <audio controls src="audio/aloma.mp3">
-                </audio>
-            </section>
+            <div id="trending">
+                <div class="scroll">
+                    <section> 
+                        <div>
+                        <h3>Aloma</h3>
+                            <dl>
+                                <dt>Artist</dt>
+                                <dd>Cali</dd>
+                            </dl>
+                        </div>
+                        <img src="images/aloma-cover.png" alt="White dove flying">
+                        <audio 
+                            controls 
+                            src="audio/aloma.mp3">
+                        </audio>
+                    </section>
 
-            <section> 
-                <div>
-                    <h3>My Road</h3>
-                        <dl>
-                            <dt>Artist</dt>
-                            <dd>Nesterouk</dd>
-                        </dl>
-                </div>
-                <img src="images/my-road-cover.png" alt="Paved Road">
-                <audio controls src="audio/my-road.mp3">
-                </audio>
-            </section>
+                    <section> 
+                        <div>
+                            <h3>My Road</h3>
+                                <dl>
+                                    <dt>Artist</dt>
+                                    <dd>Nesterouk</dd>
+                                </dl>
+                        </div>
+                        <img src="images/my-road-cover.png" alt="Paved Road">
+                        <audio controls src="audio/my-road.mp3">
+                        </audio>
+                    </section>
 
-            <section> 
-                <div>
-                    <h3>Papaya</h3>
-                        <dl>
-                            <dt>Artist</dt>
-                            <dd>Dredstudio</dd>
-                        </dl>
-                </div>
-                <img src="images/papaya-cover.png" alt="Cut Open Papaya">
-                <audio controls src="audio/papaya.mp3">
-                </audio>
-            </section>
+                    <section> 
+                        <div>
+                            <h3>Papaya</h3>
+                                <dl>
+                                    <dt>Artist</dt>
+                                    <dd>Dredstudio</dd>
+                                </dl>
+                        </div>
+                        <img src="images/papaya-cover.png" alt="Cut Open Papaya">
+                        <audio controls src="audio/papaya.mp3">
+                        </audio>
+                    </section>
 
-            <section> 
-                <div>
-                    <h3>Smoothies</h3>
-                        <dl>
-                            <dt>Artist</dt>
-                            <dd>Black Rhomb</dd>
-                        </dl>
-                </div>
-                <img src="images/smoothies-cover.png" alt="Fruits and a Smoothie">
-                <audio controls src="audio/smoothies.mp3">
-                </audio>
-            </section>
+                    <section> 
+                        <div>
+                            <h3>Smoothies</h3>
+                                <dl>
+                                    <dt>Artist</dt>
+                                    <dd>Black Rhomb</dd>
+                                </dl>
+                        </div>
+                        <img src="images/smoothies-cover.png" alt="Fruits and a Smoothie">
+                        <audio controls src="audio/smoothies.mp3">
+                        </audio>
+                    </section>
 
-            <section> 
-                <div>
-                    <h3>Successful Performance</h3>
-                        <dl>
-                            <dt>Artist</dt>
-                            <dd>Ricky Bombino</dd>
-                        </dl>
+                    <section> 
+                        <div>
+                            <h3>Successful Performance</h3>
+                                <dl>
+                                    <dt>Artist</dt>
+                                    <dd>Ricky Bombino</dd>
+                                </dl>
+                        </div>
+                        <img src="images/successful-performance-cover.png" alt="Excited Man in Red Sweatshirt">
+                        <audio controls src="audio/successful-performance.mp3">
+                        </audio>
+                    </section>
                 </div>
-                <img src="images/successful-performance-cover.png" alt="Excited Man in Red Sweatshirt">
-                <audio controls src="audio/successful-performance.mp3">
-                </audio>
-            </section>
+            </div>
+                
             <button class="button1">More Trending</button>
 
-            <section id="playlists">
-                <h2>YOUR PLAYLISTS</h2>
+            <h2>YOUR PLAYLISTS</h2>
 
+            <div id="playlists">
+                
                 <section>
                     <img src="images/best-of-2020-cover.png" alt="2020 Year">
                     <h3>Best of 2020</h3>
@@ -134,12 +139,14 @@
                     <h3>Smooth Study</h3>
                     <p>Background music to keep you going while you study. </p>
                 </section>
-                <button class="button2">All your playlists</button>
 
-            </section>
+            </div>
 
-            <section id="curated">
-                <h2>Curated Playlists</h2>
+            <button class="button2">All your playlists</button>
+
+            <h2>Curated Playlists</h2>
+
+            <div id="playlists2">
 
                 <section>
                     <a href="#">
@@ -181,15 +188,18 @@
                 </a>
                 </section>
 
-                <button class="button3">More Curated</button>
-            </section>
+            </div>
         </main>
-    
+        
+        <button class="button3">More Curated</button>
+        
         <footer>
-			<p>Copyright &copy;2022 Smooth Jazz</p>
-		</footer>	
+            <p>Copyright &copy;2022 Smooth Jazz</p>
+        </footer>
 
     </body>
+
+   
 </html>
 
 

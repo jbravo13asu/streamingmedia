@@ -1,138 +1,311 @@
-html{
-    box-sizing: border-box;
+html {
+	box-sizing: border-box;
     background-color: #020659;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-:before,
+
+*,
+*:before,
 *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-    margin: 0 auto;
-    background-color: white;
-    min-width: 375px;
-    max-width: 834px;
-}    
+	margin: 0 auto;
+	min-width: 375px;
+	max-width: 834px;
+    background-color: #ffffff;
+}
+
+main {
+    background-color: #ffffff;
+}
 
 header {
-    background-color: #020873;
     display: flex;
-    align-items: center;
+	background-color: #020873;
 }
 
-nav li {
+nav  ul {
     list-style-type: none;
-}
-
-nav ul {
-    color: white;
-    text-align: center;
-    list-style-type: none;
-    text-transform: uppercase;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: white; 
-}
-  
-nav a:hover {
-    background-color: #590242;
+    text-transform: uppercase;
 }
 
-button:hover {
-    background-color: #020659;
+#gradienthead {
+    background: rgb(0, 212, 255);
+	background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(33, 4, 217, 1) 0%, rgba(2, 0, 36, 1) 100%);
+	padding-top: 5px;
+	padding-bottom: 5px;
+    margin-bottom: -20px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+#gradienthead h1, p {
+    color: #ffffff;
 }
 
 h1 {
     font-size: 1.25em;
 }
 
-h2 ,h3 {
+h2, h3 {
     font-size: 1em;
 }
 
-p, dl , dd {
+p, dl, dd {
     font-size: 1em;
 }
 
 footer {
-    background-color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
 }
 
 footer p {
-    color :#590242;
     font-size: .75em;
+    color: #590242;
 }
 
-@media screen and (min-width: 375px) {
+#trending {
+    display: flex;
+	max-width: 834px;
+    min-width: 375px;
+    background-color: white;
+    padding: 10px;
+    overflow-x: auto; 
+}
 
-    ul {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height .2s ease-out;
+#trending section {
+    color: #590242;
+}
+
+#playlists {
+    background-color: #2699FB;
+    color: #ffffff;
+}
+
+#playlists section {
+    background-color: #0D8DFB;
+
+}
+
+h2 {
+    color: #590242;
+    padding-top: 20px;
+    padding-left: 25px;
+    text-transform: uppercase;
+}
+
+#trending div {
+    padding-top: 0;
+}
+
+#trending h3 {
+    text-transform: uppercase;
+    position: relative;
+    bottom: 10px;
+    padding-right: 10px;
+}
+
+#playlists2 {
+    background-color: #020873;
+}
+
+#playlists2 section {
+    background-color: #020659;
+}
+
+#playlists2 section a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button1 {
+    padding: 10px;
+    width: 150px;
+    margin: 10px 0 30px 32px;
+}
+
+.button1, .button2, .button3 {
+	background-color: #590242;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+	background-color: #020659;
+}
+
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: auto;  
+}
+ .scroll section {
+    margin: 10px;
+    position: relative; 
+}
+
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 5px;
+    height: 70px;
+    width: 350px;
+}
+
+dl {
+    display: flex;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    color: #590242;
+    font-size: 1em;
+    position: relative;
+    bottom: 20px;
+}
+
+dt {
+    float: left;
+    width: 17%;
+    padding: 0;
+    margin: 0;
+    font-style:italic;
+    color: #590242;
+    padding-right: 5px;
+}
+
+dd {
+    float: left;
+    margin: 0;
+    width: 50%;
+    padding: 0;
+    color: #590242;
+    font-size: 1em;
+}
+
+audio {
+    position: absolute;
+    bottom: 150px;
+    left: 5px;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: rgba(255,255,255,.5);
+}
+
+#trending ::-webkit-scrollbar {
+    width: 15px;
+}
+
+#trending ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
+}
+
+#trending ::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+}
+
+#trending ::-webkit-scrollbar-thumb:hover{
+    background: #020659;
+}
+
+#playlists1 ::-webkit-scrollbar, #playlists2 ::-webkit-scrollbar {
+    width: 15px;
+}
+
+#playlists1 ::-webkit-scrollbar-track, #playlists2 ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #020659;
+}
+
+#playlists1 ::-webkit-scrollbar-thumb, #playlists2 ::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+
+#playlists1 ::-webkit-scrollbar-thumb:hover, #playlists2 ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+/* hamburger menu first list item to stay on top of page
+position: fixed;
+*/
+
+
+
+
+
+@media screen and (min-width: 375px){
+    
+    nav ul {
+        display: grid;
+        width: 700px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+
     }
-    label {
-        cursor: pointer;
-        display: inline-block;
-        padding: 28px 20px;
-        position: relative;
-        user-select: none;
+
+    nav li {
+        padding-left: 50px;
     }
-    label span {
-        background-color: #ffffff;
-        display: block;
-        height: 2px;
-        position: relative;
-        transition: background-color .2s ease-out;
-        width: 18px;
+
+    nav li:hover {
+        background: #590242;
     }
-    label span:before, label span:after {
-        background: #ffffff;
-        content: '';
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all .2s ease-out;
-        width: 100%;
+
+
+    #title {
+        font-weight: bolder;
+        font-size: x-large;
+        padding-right: 50px;
+        padding-left: 0px;
     }
-    label span:before {
-        top: 5px;
+
+    #title::first-letter {
+        font-size: xx-large;
     }
-    label span:after {
-        top: -5px;
-    }
-    input {
+
+    #dropdown {
         display: none;
     }
-    input:checked ~ ul {
-        max-height: 500px;
-    }
-    input:checked ~ label span {
-        background: transparent;
-    }
-    input:checked ~ label span:before {
-        transform: rotate(-45deg);
-    }
-    input:checked ~ label span:after {
-        transform: rotate(45deg);
-    }
-    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-        top: 0;
-    }
 
-    #home {
-        color: #590242;
+    .button1 {
+        float: right;
+        right:20px;
     }
-    
-
-
 
 }
+
+
+
+
+
 
 
             
