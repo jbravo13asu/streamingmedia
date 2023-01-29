@@ -315,6 +315,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 @media screen and (min-width: 375px){
 
+
 }
 
 
@@ -351,6 +352,10 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
 
     #dropdown {
+        display: none;
+    }
+
+    label span, input {
         display: none;
     }
 
