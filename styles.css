@@ -321,8 +321,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 @media screen and (min-width: 834px){
     
-
-
+    nav {
+        position: fixed;
+    }
     nav ul {
         display: grid;
         width: 700px;
