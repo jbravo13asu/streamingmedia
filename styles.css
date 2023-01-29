@@ -264,9 +264,7 @@ audio::-webkit-media-controls-enclosure {
     #title {
         font-weight: bolder;
         font-size: x-large;
-        padding-left: 50px;
-        padding-bottom: 50px;
-        position:absolute;
+        position:fixed;
     }
 
     #title::first-letter {
@@ -285,11 +283,6 @@ audio::-webkit-media-controls-enclosure {
         justify-content: space-between;
     }
     
-        ul {
-            overflow: hidden;
-            max-height: 0;
-            transition: max-height .2s ease-out;
-        }
         label {
             cursor: pointer;
             display: inline-block;
