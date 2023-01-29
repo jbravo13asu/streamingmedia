@@ -269,12 +269,6 @@ audio::-webkit-media-controls-enclosure {
         margin: 0 auto;
     }
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-    }
-
 
     #title {
         font-weight: bolder;
