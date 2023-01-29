@@ -313,8 +313,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-@media screen and (max-width: 375px){
-    
+@media screen and (min-width: 375px){
+
 }
 
 
