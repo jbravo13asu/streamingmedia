@@ -269,15 +269,12 @@ audio::-webkit-media-controls-enclosure {
         margin: 0 auto;
     }
 
-    .playlists {
+    .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
     }
 
-    header {
-        position: fixed;
-    }
 
     #title {
         font-weight: bolder;
