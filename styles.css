@@ -355,10 +355,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: none;
     }
 
-    label span, input {
-        display: none;
-    }
-
     .button1 {
         float: right;
         left: 50px;
