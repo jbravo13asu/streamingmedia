@@ -273,9 +273,6 @@ audio::-webkit-media-controls-enclosure {
         font-size: xx-large;
     }
 
-    #dropdown {
-        display:contents;
-    }
 
     ul {
         overflow: hidden;
