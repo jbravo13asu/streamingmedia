@@ -259,11 +259,27 @@ audio::-webkit-media-controls-enclosure {
     background: #030a8c;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
 
-    html{
-        background-color: #020659;
+    #title {
+        font-weight: bolder;
+        font-size: x-large;
+        padding-right: 50px;
+        padding-left: 0px;
+        position: fixed;
     }
+
+    #title::first-letter {
+        font-size: xx-large;
+    }
+
+
+    ul {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+ 
     nav ul{
         display: flex;
         justify-content: space-between;
@@ -276,19 +292,19 @@ audio::-webkit-media-controls-enclosure {
         grid-template-columns: repeat(5,1fr);
         overflow-y: hidden;
         }
-    ul {
+        ul {
             overflow: hidden;
             max-height: 0;
             transition: max-height .2s ease-out;
         }
-    label {
+        label {
             cursor: pointer;
             display: inline-block;
             padding: 28px 20px;
             position: relative;
             user-select: none;
         }
-    label span {
+        label span {
             background-color: #ffffff;
             display: block;
             height: 2px;
@@ -296,7 +312,7 @@ audio::-webkit-media-controls-enclosure {
             transition: background-color .2s ease-out;
             width: 18px;
         }
-    label span:before, label span:after {
+        label span:before, label span:after {
             background: #ffffff;
             content: '';
             display: block;
@@ -305,28 +321,28 @@ audio::-webkit-media-controls-enclosure {
             transition: all .2s ease-out;
             width: 100%;
         }
-    label span:before {
+        label span:before {
             top: 5px;
         }
-    label span:after {
+        label span:after {
             top: -5px;
         }
-    input {
+        input {
             display: none;
         }
-    input:checked ~ ul {
+        input:checked ~ ul {
             max-height: 500px;
         }
-    input:checked ~ label span {
+        input:checked ~ label span {
             background: transparent;
         }
-    input:checked ~ label span:before {
+        input:checked ~ label span:before {
             transform: rotate(-45deg);
         }
-    input:checked ~ label span:after {
+        input:checked ~ label span:after {
             transform: rotate(45deg);
         }
-    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+        input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
             top: 0;
         }
     
