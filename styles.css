@@ -259,6 +259,9 @@ audio::-webkit-media-controls-enclosure {
     background: #030a8c;
 }
 
+@media screen and (min-width: 375px){
+
+
 ul {
     overflow: hidden;
     max-height: 0;
@@ -312,18 +315,10 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-
-@media screen and (min-width: 375px){
-
-
 }
-
 
 @media screen and (min-width: 834px){
     
-    nav {
-        position: fixed;
-    }
     nav ul {
         display: grid;
         width: 700px;
